@@ -1,14 +1,14 @@
 function checkExam(array1, array2) {
-    let myScore = 0
+    let myScore = 0 // keep score
     for(let i = 0; i < array1.length; i++){
-        if(array1[i] == array2[i]){
+        if(array1[i] == array2[i]){ // compare and score...
             myScore = myScore + 4;
         } else if (array1[i] != array2[i] && array2[i] == ""){
             myScore = myScore + 0;
         } else {
             myScore = myScore -1 ;
         }
-    }
+    } // Check if result is < 0
     if(myScore < 0){
         return 0;
     } else {
